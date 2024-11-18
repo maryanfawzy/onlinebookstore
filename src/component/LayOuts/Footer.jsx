@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductsList = () => {
+const Footer = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const ProductsList = () => {
   )
 }
 
-export default ProductsList
+export default Footer
