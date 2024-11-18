@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/images/logo (3).png'
 
 const Header = () => {
   return (
@@ -7,40 +8,23 @@ const Header = () => {
 
     <header>
     
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="border-b border-red dark:border-b-0 flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-3">
     <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <Link to="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        <Link to="/" class="flex items-center ">
+            <img src={logo} className="mr-3 h-6 sm:h-9" alt="" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">CodeBook</span>
         </Link>
-        <div className="flex items-center space-x-6 rtl:space-x-reverse">
-            <Link to="tel:5541251234" class="text-sm  text-gray-500 dark:text-white hover:underline">(555) 412-1234</Link>
-            <a href="#" className="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
-        </div>
-    </div>
-</nav>
-<nav className="bg-gray-50 dark:bg-gray-700">
-    <div className="max-w-screen-xl px-4 py-3 mx-auto">
-        <div className="flex items-center">
-            <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                <li>
-                    <a href="#" className="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="#" className="text-gray-900 dark:text-white hover:underline">Company</a>
-                </li>
-                <li>
-                    <a href="#" className="text-gray-900 dark:text-white hover:underline">Team</a>
-                </li>
-                <li>
-                    <a href="#" className="text-gray-900 dark:text-white hover:underline">Features</a>
-                </li>
-            </ul>
+        <div className=" cursor-pointer text-xl text-red-700 flex items-center ">
+            <span className='bi bi-gear-fill'></span>
+            <span className='bi bi-search'></span>
+            <span className='class="bi bi-cart'></span>
+            <span className='bi bi-person-circle'></span>
+            
         </div>
     </div>
 </nav>
 
-    
+
       </header>
     
 
