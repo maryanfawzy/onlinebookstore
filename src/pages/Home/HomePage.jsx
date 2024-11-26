@@ -3,7 +3,7 @@ import React from 'react'
 const HomePage = () => {
   return (
     <main>
-    <div>
+    <div className='bg-red-50'>
       homeeee
     </div>
     </main>
